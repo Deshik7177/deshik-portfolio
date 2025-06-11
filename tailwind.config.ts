@@ -55,6 +55,8 @@ export default {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
+        // Sidebar colors are kept for shadcn ui/sidebar compatibility if used later
+        // but not directly part of this portfolio's theme.
         sidebar: {
           DEFAULT: 'hsl(var(--sidebar-background))',
           foreground: 'hsl(var(--sidebar-foreground))',
@@ -88,10 +90,20 @@ export default {
             height: '0',
           },
         },
+        'pulse-neon': {
+          '0%, 100%': { boxShadow: '0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary))' },
+          '50%': { boxShadow: '0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary))' },
+        },
+        'scroll-down': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(10px)' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'pulse-neon': 'pulse-neon 2s infinite ease-in-out',
+        'scroll-down': 'scroll-down 1.5s infinite ease-in-out',
       },
     },
   },
