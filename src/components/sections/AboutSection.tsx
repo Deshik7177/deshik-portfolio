@@ -1,7 +1,8 @@
-import { timelineEvents } from '@/lib/data';
+
+import { educationTimelineEvents, experienceTimelineEvents } from '@/lib/data';
 import { TimelineItem } from '@/components/ui/TimelineItem';
 import { Badge } from '@/components/ui/badge';
-import { Code, Cpu, Database, Layers } from 'lucide-react';
+import { Code, Cpu, Database, Layers, BookOpen, Briefcase } from 'lucide-react';
 
 const techStack = [
   { name: 'Python', icon: Code },
@@ -44,13 +45,38 @@ export function AboutSection() {
             </div>
           </div>
 
-          <div className="md:col-span-3 animate-fadeIn" style={{animationDelay: '0.6s'}}>
-            <h3 className="text-2xl font-semibold mb-8 text-center md:text-left font-headline">My Journey</h3>
-            <ol className="relative border-l border-primary/50 dark:border-primary/30">
-              {timelineEvents.map((event, index) => (
-                <TimelineItem key={index} event={event} />
-              ))}
-            </ol>
+          <div className="md:col-span-3 space-y-12 animate-fadeIn" style={{animationDelay: '0.6s'}}>
+            <div>
+              <h3 className="text-2xl font-semibold mb-8 text-center md:text-left font-headline flex items-center">
+                <BookOpen className="mr-3 h-7 w-7 text-primary" />
+                My Education
+              </h3>
+              {educationTimelineEvents.length > 0 ? (
+                <ol className="relative border-l border-primary/50 dark:border-primary/30 ml-1">
+                  {educationTimelineEvents.map((event, index) => (
+                    <TimelineItem key={index} event={event} />
+                  ))}
+                </ol>
+              ) : (
+                <p className="text-muted-foreground text-center md:text-left">Details about my educational background will be updated soon.</p>
+              )}
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-8 text-center md:text-left font-headline flex items-center">
+                <Briefcase className="mr-3 h-7 w-7 text-primary" />
+                My Experience
+              </h3>
+              {experienceTimelineEvents.length > 0 ? (
+                <ol className="relative border-l border-primary/50 dark:border-primary/30 ml-1">
+                  {experienceTimelineEvents.map((event, index) => (
+                    <TimelineItem key={index} event={event} />
+                  ))}
+                </ol>
+              ) : (
+                <p className="text-muted-foreground text-center md:text-left">Details about my professional experience will be updated soon.</p>
+              )}
+            </div>
           </div>
         </div>
       </div>

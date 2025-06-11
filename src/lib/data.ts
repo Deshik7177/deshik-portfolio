@@ -5,12 +5,12 @@ import { Briefcase, GraduationCap, Github, Linkedin, Twitter, Mail } from 'lucid
 export const navItems = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/#about' },
-  { label: 'Projects', href: '/projects' }, // Updated link
+  { label: 'Projects', href: '/projects' },
   { label: 'Blog', href: '/#blog' },
   { label: 'Contact', href: '/contact' },
 ];
 
-export const timelineEvents: TimelineEvent[] = [
+export const educationTimelineEvents: TimelineEvent[] = [
   {
     date: '2020 - 2024',
     title: 'Bachelor of Technology in Computer Science',
@@ -18,6 +18,9 @@ export const timelineEvents: TimelineEvent[] = [
     description: 'Graduated with honors, focusing on software development, AI, and data structures. Actively participated in coding clubs and hackathons.',
     icon: GraduationCap,
   },
+];
+
+export const experienceTimelineEvents: TimelineEvent[] = [
   {
     date: '2023 - Present',
     title: 'Software Development Intern',
@@ -33,6 +36,7 @@ export const timelineEvents: TimelineEvent[] = [
     icon: Briefcase,
   },
 ];
+
 
 export const projects: Project[] = [
   {
