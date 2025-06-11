@@ -1,10 +1,11 @@
+
 import type { Project, TimelineEvent, Blog, SocialLink } from '@/types';
 import { Briefcase, GraduationCap, Github, Linkedin, Twitter, Mail } from 'lucide-react';
 
 export const navItems = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/#about' },
-  { label: 'Projects', href: '/#projects' },
+  { label: 'Projects', href: '/projects' }, // Updated link
   { label: 'Blog', href: '/#blog' },
   { label: 'Contact', href: '/contact' },
 ];

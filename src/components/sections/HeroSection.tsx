@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { AnimatedHeadline } from '@/components/ui/AnimatedHeadline';
 import { ScrollDownArrow } from '@/components/ui/ScrollDownArrow';
@@ -30,7 +31,7 @@ export function HeroSection() {
           </p>
           <div className="space-x-4">
             <Button size="lg" asChild className="shadow-lg hover:shadow-primary/40 transition-shadow">
-              <Link href="/#projects">
+              <Link href="/projects">
                 View My Work <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
