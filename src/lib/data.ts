@@ -22,7 +22,7 @@ export const educationTimelineEvents: TimelineEvent[] = [
     date: '2011 - 2023',
     title: 'Higher Secondary Education (CBSE 10th & 12th)',
     institution: 'Kendriya Vidyalaya Steelplant',
-    description: 'Completed All India Senior School Certificate Examination (CBSE 12th) and All India Secondary School Examination (CBSE 10th).',
+    description: 'Completed Senior School Certificate Examination (CBSE 12th) and Secondary School Examination (CBSE 10th).',
     icon: GraduationCap,
   },
 ];
@@ -126,3 +126,4 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const contactEmail = "paila.dhana.deshik@example.com"; // Replace with actual email
+
