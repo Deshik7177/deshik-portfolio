@@ -21,7 +21,7 @@ export function HeroSection() {
               data-ai-hint="profile person"
               priority
             />
-          </div>
+          </div> 
           <div className="w-full md:max-w-2xl text-center md:text-left flex flex-col items-center md:items-start">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 font-headline">
               Paila Dhana Deshik

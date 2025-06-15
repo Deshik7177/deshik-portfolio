@@ -65,6 +65,24 @@ export const projects: Project[] = [
     githubLink: 'https://github.com/Deshik7177/your-portfolio-repo-name', // Please update this link
   },
   {
+    id: 'flask-crud-api-mongodb-docker',
+    title: 'Flask CRUD API with MongoDB & Docker',
+    description: 'Type: RESTful Backend API. A fully containerized service using Flask for CRUD operations on MongoDB. Features JSON-based requests/responses and Dockerized setup. For full code and usage, refer to the GitHub repository.',
+    techStack: ["Python", "Flask", "MongoDB", "Docker"],
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'api backend code',
+    githubLink: 'https://github.com/Deshik7177/flask-crud-mongodb-docker', // Please update this link
+  },
+  {
+    id: 'credit-approval-system-django-fastapi',
+    title: 'Credit Approval System Backend',
+    description: 'Type: Scalable Backend Application. A credit management system using Django & FastAPI with PostgreSQL. Features user profiles, loan eligibility, REST APIs via FastAPI, and Django admin. Dockerized. For full documentation, refer to the GitHub repository.',
+    techStack: ["Python", "Django", "FastAPI", "PostgreSQL", "Docker"],
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'financial system architecture',
+    githubLink: 'https://github.com/Deshik7177/credit-approval-system-backend', // Please update this link
+  },
+  {
     id: '1',
     title: 'Ecoleta - Recycling Marketplace',
     description: 'A platform connecting waste collectors with recycling points. Built with Node.js, React, and React Native.',
