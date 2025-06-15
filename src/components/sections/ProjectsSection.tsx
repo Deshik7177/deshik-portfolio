@@ -9,7 +9,7 @@ export function ProjectsSection() {
   const featuredProjects = projects.slice(0, 3); // Show first 3 projects as featured
 
   return (
-    <section id="projects-overview" className="pt-12 pb-20 bg-background/70 dark:bg-background/90">
+    <section id="projects-overview" className="pt-12 pb-16 bg-background/70 dark:bg-background/90">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fadeIn" style={{animationDelay: '0.2s'}}>
           <h2 className="text-4xl font-bold mb-4 font-headline">Featured Projects</h2>

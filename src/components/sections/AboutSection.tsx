@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export function AboutSection() {
   return (
-    <section id="about" className="pt-12 pb-20 bg-background">
+    <section id="about" className="pt-12 pb-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fadeIn" style={{animationDelay: '0.2s'}}>
           <h2 className="text-4xl font-bold mb-4 font-headline">About Me</h2>
