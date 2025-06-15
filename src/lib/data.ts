@@ -71,7 +71,7 @@ export const projects: Project[] = [
     techStack: ["Python", "Flask", "MongoDB", "Docker", "REST API"],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'api backend code',
-    githubLink: 'https://github.com/Deshik7177/flask-crud-mongodb-docker',
+    githubLink: 'https://github.com/Deshik7177/Corider_Flask_Application',
   },
   {
     id: 'credit-approval-system-django-fastapi',
@@ -115,3 +115,4 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const contactEmail = "pdhanadeshik7177@gmail.com";
+
