@@ -16,7 +16,7 @@ export function HeroSection() {
             alt="Paila Dhana Deshik"
             width={200}
             height={200}
-            className="rounded-full mx-auto mb-8 border-4 border-primary shadow-2xl animate-pulse-neon"
+            className="rounded-full mx-auto mb-8 border-4 border-primary shadow-2xl animate-pulse-neon hover:scale-110 hover:-rotate-y-[8deg] transition-transform duration-300 ease-in-out"
             data-ai-hint="profile person"
             priority
           />
