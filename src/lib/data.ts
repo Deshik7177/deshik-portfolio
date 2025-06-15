@@ -80,7 +80,7 @@ export const projects: Project[] = [
     techStack: ["Python", "Django", "FastAPI", "PostgreSQL", "Docker"],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'financial system architecture',
-    githubLink: 'https://github.com/Deshik7177/credit-approval-system-backend',
+    githubLink: 'https://github.com/Deshik7177/Alemeno_Credit_Approval_System',
   },
   {
     id: 'college-chatbot-llm-flask',
