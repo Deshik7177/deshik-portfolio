@@ -92,12 +92,12 @@ export const projects: Project[] = [
   },
 ];
 
-export const blogPosts: Blog[] = []; // Empty array for blog posts
+export const blogPosts: Blog[] = []; // Empty array for blog posts - for "Coming Soon" page
 
 export const socialLinks: SocialLink[] = [
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/pailadhanadeshik', 
+    url: 'https://www.linkedin.com/in/paila-dhana-deshik', 
     icon: Linkedin,
   },
   {
@@ -112,4 +112,5 @@ export const socialLinks: SocialLink[] = [
   },
 ];
 
-export const contactEmail = "paila.dhana.deshik@example.com";
+export const contactEmail = "pdhanadeshik7177@gmail.com";
+

@@ -1,3 +1,4 @@
+
 import { ContactForm } from '@/components/ContactForm';
 import { SocialIcons } from '@/components/ui/SocialIcons';
 import { Mail, Phone } from 'lucide-react';
@@ -33,16 +34,15 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Optional: Add Phone if Paila wants */}
-            {/* <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4">
               <Phone className="h-6 w-6 text-primary mt-1 shrink-0" />
               <div>
                 <h3 className="font-semibold text-lg">Phone</h3>
-                <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                  +1 (234) 567-890 
+                <a href="tel:+917731061414" className="text-muted-foreground hover:text-primary transition-colors">
+                  +91 7731061414
                 </a>
               </div>
-            </div> */}
+            </div>
 
             <div className="pt-4">
               <h3 className="font-semibold text-lg mb-3">Connect on Social Media</h3>
@@ -59,3 +59,4 @@ export default function ContactPage() {
     </div>
   );
 }
+
