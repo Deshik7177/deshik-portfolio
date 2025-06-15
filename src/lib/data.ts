@@ -68,7 +68,7 @@ export const projects: Project[] = [
     id: 'flask-crud-api-mongodb-docker',
     title: 'Flask CRUD API with MongoDB & Docker',
     description: 'Flask & MongoDB CRUD API, fully Dockerized. Offers RESTful endpoints, ID search, JSON support. Project details and testing guide on GitHub.',
-    techStack: ["Python", "Flask", "MongoDB", "Docker"],
+    techStack: ["Python", "Flask", "MongoDB", "Docker", "REST API"],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'api backend code',
     githubLink: 'https://github.com/Deshik7177/flask-crud-mongodb-docker',
