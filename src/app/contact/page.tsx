@@ -16,7 +16,7 @@ export default function ContactPage() {
         <div className="text-center mb-16 animate-fadeIn" style={{ animationDelay: '0.1s' }}>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-headline">Get In Touch</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind, a question, or just want to connect? Feel free to reach out!
+            Questions, projects, or just want to connect? I&apos;d love to hear from you.
           </p>
         </div>
 
@@ -24,21 +24,19 @@ export default function ContactPage() {
           <div className="md:col-span-1 space-y-8 p-8 rounded-xl glass-card animate-fadeIn" style={{ animationDelay: '0.3s' }}>
             <h2 className="text-2xl font-semibold mb-6 font-headline">Contact Information</h2>
             
-            <div className="flex items-start space-x-4">
-              <Mail className="h-6 w-6 text-primary mt-1 shrink-0" />
+            <div className="flex items-center space-x-4">
+              <Mail className="h-6 w-6 text-primary shrink-0" />
               <div>
-                <h3 className="font-semibold text-lg">Email</h3>
-                <a href={`mailto:${contactEmail}`} className="text-muted-foreground hover:text-primary transition-colors break-all">
+                <a href={`mailto:${contactEmail}`} className="text-lg text-muted-foreground hover:text-primary transition-colors break-all">
                   {contactEmail}
                 </a>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
-              <Phone className="h-6 w-6 text-primary mt-1 shrink-0" />
+            <div className="flex items-center space-x-4">
+              <Phone className="h-6 w-6 text-primary shrink-0" />
               <div>
-                <h3 className="font-semibold text-lg">Phone</h3>
-                <a href="tel:+917731061414" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="tel:+917731061414" className="text-lg text-muted-foreground hover:text-primary transition-colors">
                   +91 7731061414
                 </a>
               </div>
