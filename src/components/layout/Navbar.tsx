@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -37,7 +38,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2 text-xl font-bold hover:text-primary transition-colors">
             <Code2 className="h-7 w-7 text-primary" />
-            <span className="font-headline">Paila D. Deshik</span>
+            <span className="font-headline">Deshik</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">

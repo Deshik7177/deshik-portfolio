@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Moon, Sun } from "lucide-react";
@@ -5,19 +6,22 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
 export function DarkModeToggle() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false); // Default to false, useEffect will determine actual state
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
-      document.documentElement.classList.add("dark");
-      setIsDarkMode(true);
-    } else {
+    
+    if (storedTheme === "light") {
       document.documentElement.classList.remove("dark");
       setIsDarkMode(false);
+    } else { // This covers storedTheme === 'dark' or storedTheme === null (defaults to dark)
+      document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
+      if (!storedTheme) { // If it was null, explicitly set it to dark in localStorage
+        localStorage.setItem("theme", "dark");
+      }
     }
   }, []);
 
@@ -34,6 +38,7 @@ export function DarkModeToggle() {
   };
 
   if (!mounted) {
+    // Render a disabled button or null while waiting for mount to avoid hydration mismatch
     return <Button variant="ghost" size="icon" className="h-9 w-9" disabled aria-label="Loading theme toggle" />;
   }
 
