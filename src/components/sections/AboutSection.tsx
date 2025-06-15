@@ -10,43 +10,35 @@ export function AboutSection() {
         </div>
         <div className="max-w-3xl mx-auto animate-fadeIn" style={{animationDelay: '0.4s'}}>
           <div className="p-8 rounded-xl glass-card text-lg text-muted-foreground leading-relaxed">
-            <p className="mb-2">
-              Hey, I’m Paila Dhana Deshik — just a kid who walked into a school lab back in 7th grade and never looked back.
+            <p className="mb-4">
+              Hey! I’m Paila Dhana Deshik — a Computer Science Engineer and tech explorer with a curious brain and robot-loving heart.
             </p>
-            <p className="mb-2">
-              My tech journey kicked off in 2018 when my school introduced something called the Atal Tinkering Lab (ATL) — a space filled with wires, circuits, sensors, and ideas waiting to come alive. That’s where I first touched electronics and got a glimpse of what it means to build things that move, blink, and respond.
+            <p className="mb-4">
+              I work at the crossroads of software and hardware — from building Flask/Django-based web apps to designing smart systems with Raspberry Pi. I’m currently deep into backend dev, AI/ML, and automation, and I love taking real-world problems and turning them into projects that *do stuff*.
             </p>
-            <p className="mb-2">
-              By 11th grade, I got officially introduced to Python through my CS subject — and that’s where it all clicked. From writing basic scripts to exploring SQL databases, I found myself deep in the rabbit hole. I didn’t just learn coding — I got hooked on solving real problems with logic and curiosity.
-            </p>
-            <p className="mb-2">
-              Fast forward to college — now I’m diving headfirst into the world of Web Development, AI, Machine Learning, and NLP, experimenting with everything I can get my hands on. But the real plot twist? I found my second home in my college’s Robotics Lab. That’s where hardware and code collide — and where I feel most alive.
-            </p>
-            <p className="mb-2">
-              Right now, I’m exploring how code can interact with the real world — whether it’s building smart systems with Raspberry Pi, training models to understand language, or creating fullstack apps that solve real-world problems. I’m not just chasing trends. I’m chasing impact.
+            <p className="mb-6">
+              Outside the compiler, you’ll probably catch me messing around in the Robotics Lab, obsessing over new tech, or trying to build something I barely understand... *yet* 😎
             </p>
 
-            <div className="mt-4 mb-2">
-              <h3 className="text-xl font-semibold font-headline text-foreground mb-2">💭 Core Values:</h3>
-              <p>Curiosity. Consistency. Chaos-taming through code.</p>
-            </div>
-
-            <div className="mt-4 mb-2">
-              <h3 className="text-xl font-semibold font-headline text-foreground mb-2">🤖 What I Love:</h3>
-              <p>Python, Robotics, Flask/Django, Docker, AI, and automating anything that moves.</p>
-            </div>
-
-            <div className="mt-4 mb-2">
-              <h3 className="text-xl font-semibold font-headline text-foreground mb-2">🧠 Current Mode:</h3>
-              <p>Learning → Building → Breaking → Rebuilding → Documenting → Repeating.</p>
-            </div>
-
-            <div className="mt-4 mb-2">
-              <h3 className="text-xl font-semibold font-headline text-foreground mb-2">🎯 Next Up:</h3>
-              <p>Working with real teams, shipping real products, and building things people actually use.</p>
-            </div>
+            <h3 className="text-2xl font-bold font-headline text-foreground mt-8 mb-4">My Tech Journey</h3>
+            <p className="mb-4">
+              It all started back in 2018, when I was in 7th grade. My school introduced something called ATL — the Atal Tinkering Lab. That place changed everything.
+            </p>
+            <p className="mb-4">
+              For the first time, I touched circuits, sensors, and microcontrollers. We weren’t just studying science — we were *building it*. That’s when I realized: tech wasn’t just something you use... it was something you could *create*.
+            </p>
+            <p className="mb-4">
+              Then came 11th grade. Python entered the chat 📲<br/>
+              Our Computer Science subject was all about Python and SQL, and that’s where I truly got into coding. Once I started writing code, I couldn’t stop. I kept diving deeper — from simple logic problems to full-blown projects.
+            </p>
+            <p className="mb-4">
+              College opened up a whole new world — <strong>web dev, AI, ML, NLP, cloud</strong>, and most importantly, <strong>robotics</strong>. Our college robotics lab became my happy place — a wild zone where hardware meets code and everything feels possible.
+            </p>
+            <p className="mb-6">
+              Since then, I've been experimenting, failing, learning, and building — and honestly? That’s the part I love the most.
+            </p>
             
-            <p className="mt-4">
+            <p className="mt-8">
               For a more structured look at my skills, educational background, and professional experience, please visit my{' '}
               <Link href="/resume" className="text-primary hover:underline font-medium">
                 Resume page
