@@ -1,11 +1,6 @@
+"use client";
 
-import type { Metadata } from 'next';
 import { Sparkles } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: "Blog Coming Soon | Paila Dhana Deshik",
-  description: "Stay tuned for insightful articles and updates from Paila Dhana Deshik.",
-};
 
 export default function BlogComingSoonPage() {
   return (
