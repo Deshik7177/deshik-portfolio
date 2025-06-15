@@ -24,7 +24,7 @@ export function HeroSection() {
           </div>
           <div className="w-full md:max-w-2xl text-center md:text-left flex flex-col items-center md:items-start">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 font-headline">
-              Deshik
+              Paila Dhana Deshik
             </h1>
             <p className="text-2xl md:text-3xl text-primary mb-8 font-headline">
               <AnimatedHeadline />
