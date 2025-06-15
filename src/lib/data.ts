@@ -62,7 +62,7 @@ export const projects: Project[] = [
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Framer Motion'],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'website homepage abstract',
-    githubLink: 'https://github.com/Deshik7177/your-portfolio-repo-name', 
+    githubLink: 'https://github.com/Deshik7177/your-portfolio-repo-name',
   },
   {
     id: 'flask-crud-api-mongodb-docker',
@@ -71,16 +71,16 @@ export const projects: Project[] = [
     techStack: ["Python", "Flask", "MongoDB", "Docker"],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'api backend code',
-    githubLink: 'https://github.com/Deshik7177/flask-crud-mongodb-docker', 
+    githubLink: 'https://github.com/Deshik7177/flask-crud-mongodb-docker',
   },
   {
     id: 'credit-approval-system-django-fastapi',
     title: 'Credit Approval System Backend',
-    description: 'Type: Scalable Backend Application. A backend credit management and eligibility system developed using Django and FastAPI. It allows users to create profiles, check loan eligibility, and add loan details to a PostgreSQL database. The system is containerized using Docker and built with scalability and modularity in mind. Features: User account creation and deletion, Add loan information to the PostgreSQL database, Eligibility check logic based on financial input, REST API developed using FastAPI for speed and documentation, Admin and management handled by Django framework, Dockerized for isolated development environments. Note: All technical documentation, routes, and testing instructions are available in the GitHub repository. Please follow the README file for detailed setup and API usage.',
+    description: "A scalable backend credit management system using Django and FastAPI. Features user profiles, loan eligibility checks, and PostgreSQL integration. Dockerized for deployment. See GitHub for full docs and API usage.",
     techStack: ["Python", "Django", "FastAPI", "PostgreSQL", "Docker"],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'financial system architecture',
-    githubLink: 'https://github.com/Deshik7177/credit-approval-system-backend', 
+    githubLink: 'https://github.com/Deshik7177/credit-approval-system-backend',
   },
   {
     id: 'ecoleta-recycling-marketplace',
@@ -89,8 +89,8 @@ export const projects: Project[] = [
     techStack: ['React', 'Node.js', 'Express', 'SQLite', 'TypeScript'],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'eco friendly app',
-    githubLink: '#', 
-    demoLink: '#',   
+    githubLink: '#',
+    demoLink: '#',
   },
   {
     id: 'ai-resume-analyzer',
@@ -121,22 +121,22 @@ export const projects: Project[] = [
   },
 ];
 
-export const blogPosts: Blog[] = []; 
+export const blogPosts: Blog[] = [];
 
 export const socialLinks: SocialLink[] = [
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/paila-dhana-deshik', 
+    url: 'https://www.linkedin.com/in/paila-dhana-deshik',
     icon: Linkedin,
   },
   {
     name: 'GitHub',
-    url: 'https://github.com/Deshik7177', 
+    url: 'https://github.com/Deshik7177',
     icon: Github,
   },
   {
     name: 'Twitter',
-    url: 'https://twitter.com/pailadhana', 
+    url: 'https://twitter.com/pailadhana',
     icon: Twitter,
   },
 ];
