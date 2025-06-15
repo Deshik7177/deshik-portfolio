@@ -33,7 +33,7 @@ export default function ResumePage() {
               </h2>
               <div className="p-0 md:p-8 rounded-xl md:glass-card">
                 {experienceTimelineEvents.length > 0 ? (
-                  <ol className="relative border-l border-primary/50 dark:border-primary/30 ml-1">
+                  <ol className="relative border-l border-primary/50 dark:border-primary/30 ml-4">
                     {experienceTimelineEvents.map((event, index) => (
                       <TimelineItem key={index} event={event} />
                     ))}
@@ -75,7 +75,7 @@ export default function ResumePage() {
             </h2>
             <div className="p-0 md:p-8 rounded-xl md:glass-card">
               {educationTimelineEvents.length > 0 ? (
-                <ol className="relative border-l border-primary/50 dark:border-primary/30 ml-1">
+                <ol className="relative border-l border-primary/50 dark:border-primary/30 ml-4">
                   {educationTimelineEvents.map((event, index) => (
                     <TimelineItem key={index} event={event} />
                   ))}

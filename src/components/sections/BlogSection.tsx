@@ -13,7 +13,7 @@ export function BlogSection() {
   }
 
   return (
-    <section id="blog" className="py-20 bg-background/70 dark:bg-background/90">
+    <section id="blog-overview" className="pt-12 pb-20 bg-background/70 dark:bg-background/90">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fadeIn" style={{animationDelay: '0.2s'}}>
           <h2 className="text-4xl font-bold mb-4 font-headline">Latest Blog Posts</h2>
