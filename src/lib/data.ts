@@ -21,6 +21,9 @@ export const techStack = [
   { name: 'TypeScript', icon: Code },
   { name: 'Node.js', icon: Layers },
   { name: 'Docker', icon: Layers },
+  { name: 'Next.js', icon: Code },
+  { name: 'Tailwind CSS', icon: Layers },
+  { name: 'ShadCN UI', icon: Layers },
 ];
 
 export const educationTimelineEvents: TimelineEvent[] = [
@@ -52,6 +55,15 @@ export const experienceTimelineEvents: TimelineEvent[] = [
 
 
 export const projects: Project[] = [
+  {
+    id: 'portfolio-v2',
+    title: 'Personal Portfolio Website (This Site)',
+    description: 'My dynamic personal portfolio built with Next.js and Tailwind CSS, showcasing my projects, skills, and journey. Features responsive design, interactive elements, and a dark mode.',
+    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Framer Motion'],
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'website homepage abstract',
+    githubLink: 'https://github.com/Deshik7177/your-portfolio-repo-name', // Please update this link
+  },
   {
     id: '1',
     title: 'Ecoleta - Recycling Marketplace',
@@ -113,4 +125,3 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const contactEmail = "pdhanadeshik7177@gmail.com";
-
