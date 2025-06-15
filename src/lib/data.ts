@@ -102,7 +102,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: 'GitHub',
-    url: 'https://github.com/pailadhanadeshik', 
+    url: 'https://github.com/Deshik7177', 
     icon: Github,
   },
   {
