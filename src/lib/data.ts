@@ -12,10 +12,17 @@ export const navItems = [
 
 export const educationTimelineEvents: TimelineEvent[] = [
   {
-    date: '2020 - 2024',
-    title: 'Bachelor of Technology in Computer Science',
-    institution: 'Awesome University Name',
-    description: 'Graduated with honors, focusing on software development, AI, and data structures. Actively participated in coding clubs and hackathons.',
+    date: '2023 - Present',
+    title: 'B.Tech in CSE (AI & ML)',
+    institution: 'Kakinada Institute of Engineering and Technology',
+    description: 'Currently pursuing a Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning.',
+    icon: GraduationCap,
+  },
+  {
+    date: '2011 - 2023',
+    title: 'Higher Secondary Education (CBSE 10th & 12th)',
+    institution: 'Kendriya Vidyalaya Steelplant',
+    description: 'Completed All India Senior School Certificate Examination (CBSE 12th) and All India Secondary School Examination (CBSE 10th).',
     icon: GraduationCap,
   },
 ];
