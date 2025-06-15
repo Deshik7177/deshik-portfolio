@@ -13,7 +13,7 @@ export const navItems = [
 export const educationTimelineEvents: TimelineEvent[] = [
   {
     date: '2023 - Present',
-    title: 'B.Tech in CSE (AI & ML)',
+    title: 'B.Tech in CSE (Artificial Intelligence & Machine Learning)',
     institution: 'Kakinada Institute of Engineering and Technology',
     description: 'Currently pursuing a Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning.',
     icon: GraduationCap,
@@ -29,17 +29,10 @@ export const educationTimelineEvents: TimelineEvent[] = [
 
 export const experienceTimelineEvents: TimelineEvent[] = [
   {
-    date: '2023 - Present',
-    title: 'Software Development Intern',
-    institution: 'Tech Solutions Inc.',
-    description: 'Contributed to developing and maintaining web applications using Python, Django, and React. Gained experience in agile methodologies and version control.',
-    icon: Briefcase,
-  },
-  {
-    date: 'Summer 2022',
-    title: 'AI Research Assistant (Intern)',
-    institution: 'University Research Lab',
-    description: 'Assisted in research on machine learning models, data preprocessing, and result analysis. Worked with Python and TensorFlow.',
+    date: 'April 2025 - Present',
+    title: 'AI & ML Intern',
+    institution: 'LSI Labs @ IIIT Hyderabad',
+    description: 'Working on computer vision, machine learning, hardware (Raspberry Pi), and automation.',
     icon: Briefcase,
   },
 ];
