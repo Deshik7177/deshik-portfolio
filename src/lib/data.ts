@@ -62,7 +62,7 @@ export const projects: Project[] = [
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Framer Motion'],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'website homepage abstract',
-    githubLink: 'https://github.com/Deshik7177/your-portfolio-repo-name', // Please update this link
+    githubLink: 'https://github.com/Deshik7177/your-portfolio-repo-name', 
   },
   {
     id: 'flask-crud-api-mongodb-docker',
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     techStack: ["Python", "Flask", "MongoDB", "Docker"],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'api backend code',
-    githubLink: 'https://github.com/Deshik7177/flask-crud-mongodb-docker', // Please update this link
+    githubLink: 'https://github.com/Deshik7177/flask-crud-mongodb-docker', 
   },
   {
     id: 'credit-approval-system-django-fastapi',
@@ -80,11 +80,48 @@ export const projects: Project[] = [
     techStack: ["Python", "Django", "FastAPI", "PostgreSQL", "Docker"],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'financial system architecture',
-    githubLink: 'https://github.com/Deshik7177/credit-approval-system-backend', // Please update this link
+    githubLink: 'https://github.com/Deshik7177/credit-approval-system-backend', 
+  },
+  {
+    id: 'ecoleta-recycling-marketplace',
+    title: 'Ecoleta - Recycling Marketplace',
+    description: 'A platform connecting waste collectors with entities needing to dispose of recyclable materials. Built during Next Level Week by Rocketseat.',
+    techStack: ['React', 'Node.js', 'Express', 'SQLite', 'TypeScript'],
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'eco friendly app',
+    githubLink: '#', 
+    demoLink: '#',   
+  },
+  {
+    id: 'ai-resume-analyzer',
+    title: 'AI Powered Resume Analyzer',
+    description: 'A tool that uses AI to analyze resumes, provide feedback, and match candidates with job descriptions. (Conceptual Project)',
+    techStack: ['Python', 'Flask', 'NLP', 'Machine Learning', 'React'],
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'ai resume analysis',
+    githubLink: '#',
+  },
+  {
+    id: 'portfolio-v1',
+    title: 'Portfolio Website v1',
+    description: 'My first portfolio website built with basic HTML, CSS, and JavaScript. A great learning experience in foundational web technologies.',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'simple website design',
+    githubLink: '#',
+  },
+  {
+    id: 'django-blog-platform',
+    title: 'Django Blog Platform',
+    description: 'A full-featured blogging platform built with Django, including user authentication, post creation, comments, and an admin panel.',
+    techStack: ['Python', 'Django', 'PostgreSQL', 'HTML', 'CSS'],
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'blog interface',
+    githubLink: '#',
   },
 ];
 
-export const blogPosts: Blog[] = []; // Empty array for blog posts - for "Coming Soon" page
+export const blogPosts: Blog[] = []; 
 
 export const socialLinks: SocialLink[] = [
   {
@@ -105,4 +142,3 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const contactEmail = "pdhanadeshik7177@gmail.com";
-
