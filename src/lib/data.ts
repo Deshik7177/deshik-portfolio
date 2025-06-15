@@ -1,13 +1,26 @@
 
 import type { Project, TimelineEvent, Blog, SocialLink } from '@/types';
-import { Briefcase, GraduationCap, Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Briefcase, GraduationCap, Github, Linkedin, Twitter, Mail, Code, Cpu, Database, Layers } from 'lucide-react';
 
 export const navItems = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/#about' },
+  { label: 'Resume', href: '/resume' },
   { label: 'Projects', href: '/projects' },
   { label: 'Blog', href: '/#blog' },
   { label: 'Contact', href: '/contact' },
+];
+
+export const techStack = [
+  { name: 'Python', icon: Code },
+  { name: 'Django', icon: Layers },
+  { name: 'React', icon: Code },
+  { name: 'SQLite', icon: Database },
+  { name: 'FastAPI', icon: Cpu },
+  { name: 'JavaScript', icon: Code },
+  { name: 'TypeScript', icon: Code },
+  { name: 'Node.js', icon: Layers },
+  { name: 'Docker', icon: Layers },
 ];
 
 export const educationTimelineEvents: TimelineEvent[] = [
@@ -103,20 +116,19 @@ export const blogPosts: Blog[] = [
 export const socialLinks: SocialLink[] = [
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/pailadhanadeshik', // Replace with actual link
+    url: 'https://www.linkedin.com/in/pailadhanadeshik', 
     icon: Linkedin,
   },
   {
     name: 'GitHub',
-    url: 'https://github.com/pailadhanadeshik', // Replace with actual link
+    url: 'https://github.com/pailadhanadeshik', 
     icon: Github,
   },
   {
     name: 'Twitter',
-    url: 'https://twitter.com/pailadhana', // Replace with actual link
+    url: 'https://twitter.com/pailadhana', 
     icon: Twitter,
   },
 ];
 
-export const contactEmail = "paila.dhana.deshik@example.com"; // Replace with actual email
-
+export const contactEmail = "paila.dhana.deshik@example.com";
