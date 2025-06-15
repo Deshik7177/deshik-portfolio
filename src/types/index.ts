@@ -1,3 +1,4 @@
+
 import type { LucideIcon } from 'lucide-react';
 
 export type NavItem = {
@@ -25,12 +26,13 @@ export type Project = {
   demoLink?: string;
 };
 
-export type Blog = {
-  id: string;
-  title: string;
-  description: string;
-  slug: string; 
-};
+// Blog type definition removed
+// export type Blog = {
+//   id: string;
+//   title: string;
+//   description: string;
+//   slug: string; 
+// };
 
 export type SocialLink = {
   name: string;

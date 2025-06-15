@@ -1,13 +1,13 @@
 
-import type { Project, TimelineEvent, Blog, SocialLink } from '@/types';
-import { Briefcase, GraduationCap, Github, Linkedin, Twitter, Mail, Code, Cpu, Database, Layers } from 'lucide-react';
+import type { Project, TimelineEvent, SocialLink } from '@/types';
+import { Briefcase, GraduationCap, Github, Linkedin, Twitter, Mail, Code, Cpu, Database, Layers, BookOpen, Wrench } from 'lucide-react';
 
 export const navItems = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/#about' },
   { label: 'Resume', href: '/resume' },
   { label: 'Projects', href: '/projects' },
-  { label: 'Blog', href: '/#blog' },
+  // { label: 'Blog', href: '/#blog' }, // Blog link removed
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -92,26 +92,8 @@ export const projects: Project[] = [
   },
 ];
 
-export const blogPosts: Blog[] = [
-  {
-    id: '1',
-    title: 'Getting Started with FastAPI for Backend Development',
-    description: 'A comprehensive guide to building robust APIs with FastAPI, Python\'s modern web framework.',
-    slug: 'getting-started-with-fastapi',
-  },
-  {
-    id: '2',
-    title: 'The Power of React Hooks for State Management',
-    description: 'Exploring how React Hooks simplify state logic and improve code reusability in functional components.',
-    slug: 'react-hooks-state-management',
-  },
-  {
-    id: '3',
-    title: 'My Journey into AI and Machine Learning',
-    description: 'Sharing my experiences, challenges, and learnings as I delve into the fascinating world of Artificial Intelligence.',
-    slug: 'my-journey-into-ai',
-  },
-];
+// blogPosts array removed as blog functionality is being removed.
+// export const blogPosts: Blog[] = [ ... ];
 
 export const socialLinks: SocialLink[] = [
   {
