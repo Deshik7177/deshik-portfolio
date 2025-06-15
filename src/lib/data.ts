@@ -67,7 +67,7 @@ export const projects: Project[] = [
   {
     id: 'flask-crud-api-mongodb-docker',
     title: 'Flask CRUD API with MongoDB & Docker',
-    description: 'Type: RESTful Backend API. A fully containerized backend service built using Flask, capable of performing basic CRUD operations — Create, Read (all and by ID), Update, and Delete — on a MongoDB collection. The project follows clean RESTful practices and is structured for ease of testing using tools like Postman. Features: CRUD operations via HTTP endpoints, Search data by ID, JSON-based request and response format, Dockerized setup for simple containerized deployment, Clean project structure for scalability. Note: For full code, architecture, and endpoint usage — Refer to the GitHub repository and follow the README instructions to test all routes and functionalities.',
+    description: 'Flask & MongoDB CRUD API, fully Dockerized. Offers RESTful endpoints, ID search, JSON support. Project details and testing guide on GitHub.',
     techStack: ["Python", "Flask", "MongoDB", "Docker"],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'api backend code',
