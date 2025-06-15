@@ -1,37 +1,44 @@
 
-import { blogPosts } from '@/lib/data';
-import { BlogCard } from '@/components/ui/BlogCard';
 import type { Metadata } from 'next';
+import { Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Blog | Paila Dhana Deshik",
-  description: "Read articles and insights from Paila Dhana Deshik on technology, software development, AI, and personal journey.",
+  title: "Blog Coming Soon | Paila Dhana Deshik",
+  description: "Stay tuned for insightful articles and updates from Paila Dhana Deshik.",
 };
 
-export default function BlogListPage() {
+export default function BlogComingSoonPage() {
   return (
-    <div className="py-20 bg-background/70 dark:bg-background/90">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fadeIn" style={{animationDelay: '0.1s'}}>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 font-headline">My Blog</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Welcome to my blog. Here I share insights, experiences, and thoughts on my journey through technology, AI, and software development.
+    <div className="py-20 bg-background/70 dark:bg-background/90 flex items-center justify-center min-h-[calc(100vh-128px)]"> {/* Adjust min-h to account for navbar/footer */}
+      <div className="container mx-auto px-4 text-center">
+        <div className="animate-fadeIn" style={{ animationDelay: '0.1s' }}>
+          <Sparkles className="mx-auto h-24 w-24 text-primary mb-8 animate-pulse" />
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-headline bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary animate-gradient-xy">
+            Coming Soon!
+          </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">
+            My blog is currently under construction.
+          </p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            I&apos;m working hard to bring you exciting content, insights, and updates on my journey through technology, AI, and software development. Please check back later!
           </p>
         </div>
-        {blogPosts.length > 0 ? (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post, index) => (
-              <div key={post.id} className="animate-fadeIn" style={{animationDelay: `${(index * 0.1) + 0.3}s`}}>
-                <BlogCard post={post} />
-              </div>
-            ))}
-          </div>
-        ) : (
-           <div className="text-center py-12 animate-fadeIn" style={{animationDelay: '0.3s'}}>
-            <p className="text-xl text-muted-foreground">No blog posts available at the moment. Check back soon!</p>
-          </div>
-        )}
       </div>
+      <style jsx global>{`
+        @keyframes gradient-xy {
+          0%, 100% {
+            background-size: 200% 200%;
+            background-position: left center;
+          }
+          50% {
+            background-size: 200% 200%;
+            background-position: right center;
+          }
+        }
+        .animate-gradient-xy {
+          animation: gradient-xy 6s ease infinite;
+        }
+      `}</style>
     </div>
   );
 }

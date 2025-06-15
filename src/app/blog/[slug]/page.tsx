@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import type { Metadata, ResolvingMetadata } from 'next';
+import { Badge } from '@/components/ui/badge';
 
 type BlogPageProps = {
   params: {
@@ -14,6 +15,8 @@ type BlogPageProps = {
 };
 
 export async function generateStaticParams() {
+  // Since blogPosts will be empty, this will return an empty array.
+  // Next.js will not pre-render any blog post pages at build time.
   return blogPosts.map((post) => ({
     slug: post.slug,
   }));
@@ -28,13 +31,11 @@ export async function generateMetadata(
   if (!post) {
     return {
       title: "Post Not Found",
-      description: "The blog post you are looking for does not exist.",
+      description: "The blog post you are looking for does not exist or is coming soon.",
     }
   }
 
-  // Optionally, use parent metadata to extend it
-  // const previousImages = (await parent).openGraph?.images || []
-
+  // This part will likely not be reached if blogPosts is empty
   return {
     title: `${post.title} | Paila Dhana Deshik`,
     description: post.description,
@@ -42,9 +43,8 @@ export async function generateMetadata(
       title: post.title,
       description: post.description,
       type: 'article',
-      publishedTime: new Date(post.date).toISOString(), // Assuming post.date is a parsable date string
+      publishedTime: new Date(post.date).toISOString(),
       authors: [post.author],
-      // images: post.imageUrl ? [{ url: post.imageUrl, alt: post.title }, ...previousImages] : previousImages,
     },
   }
 }
@@ -54,9 +54,11 @@ export default function BlogPostPage({ params }: BlogPageProps) {
   const post = blogPosts.find((p) => p.slug === params.slug);
 
   if (!post) {
-    notFound();
+    notFound(); // This will render the 404 page
   }
 
+  // The following code will not be reached if blogPosts is empty.
+  // It's kept for potential future use if blogs are re-added.
   return (
     <div className="py-20 bg-background">
       <div className="container mx-auto px-4 max-w-3xl">
@@ -112,6 +114,3 @@ export default function BlogPostPage({ params }: BlogPageProps) {
     </div>
   );
 }
-
-// Need to import Badge if not already present
-import { Badge } from '@/components/ui/badge';
