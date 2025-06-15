@@ -60,7 +60,7 @@ export default function BlogPostPage({ params }: BlogPageProps) {
   // The following code will not be reached if blogPosts is empty.
   // It's kept for potential future use if blogs are re-added.
   return (
-    <div className="py-20 bg-background">
+    <div className="pt-12 pb-20 bg-background">
       <div className="container mx-auto px-4 max-w-3xl">
         <Button variant="outline" asChild className="mb-8 animate-fadeIn">
           <Link href="/blog">

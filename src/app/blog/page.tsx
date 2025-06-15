@@ -4,7 +4,7 @@ import { Sparkles } from 'lucide-react';
 
 export default function BlogComingSoonPage() {
   return (
-    <div className="py-20 bg-background/70 dark:bg-background/90 flex items-center justify-center min-h-[calc(100vh-128px)]"> {/* Adjust min-h to account for navbar/footer */}
+    <div className="pt-12 pb-20 bg-background/70 dark:bg-background/90 flex items-center justify-center min-h-[calc(100vh-128px)]"> {/* Adjust min-h to account for navbar/footer */}
       <div className="container mx-auto px-4 text-center">
         <div className="animate-fadeIn" style={{ animationDelay: '0.1s' }}>
           <Sparkles className="mx-auto h-24 w-24 text-primary mb-8 animate-pulse" />
