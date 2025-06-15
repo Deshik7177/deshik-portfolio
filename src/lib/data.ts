@@ -89,7 +89,7 @@ export const projects: Project[] = [
     techStack: ['Python', 'Flask', 'Ollama', 'LLM', 'JSON', 'Netlify'],
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'chatbot interface ai',
-    githubLink: 'https://github.com/Deshik7177/college-chatbot-llm-flask',
+    githubLink: 'https://github.com/Deshik7177/bot-backend',
     demoLink: 'https://kiet-chatbot.netlify.app/',
   },
 ];
