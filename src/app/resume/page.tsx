@@ -32,49 +32,46 @@ export default function ResumePage() {
         </div>
 
         <div className="space-y-16 mt-16">
-          {/* Grid for Experience and Skills */}
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Experience Section */}
-            <section id="experience" className="animate-fadeIn md:col-span-1" style={{ animationDelay: '0.3s' }}>
-              <h2 className="text-3xl font-bold mb-8 font-headline flex items-center justify-center md:justify-start">
-                <Briefcase className="mr-3 h-8 w-8 text-primary" />
-                Experience
-              </h2>
-              <div className="p-0 md:p-8 rounded-xl md:glass-card">
-                {experienceTimelineEvents.length > 0 ? (
-                  <ol className="relative border-l border-primary/50 dark:border-primary/30 ml-4">
-                    {experienceTimelineEvents.map((event, index) => (
-                      <TimelineItem key={index} event={event} />
-                    ))}
-                  </ol>
-                ) : (
-                  <p className="text-muted-foreground text-center">Details about my professional experience will be updated soon.</p>
-                )}
-              </div>
-            </section>
+          {/* Experience Section */}
+          <section id="experience" className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
+            <h2 className="text-3xl font-bold mb-8 font-headline flex items-center justify-center md:justify-start">
+              <Briefcase className="mr-3 h-8 w-8 text-primary" />
+              Experience
+            </h2>
+            <div className="p-0 md:p-8 rounded-xl md:glass-card">
+              {experienceTimelineEvents.length > 0 ? (
+                <ol className="relative border-l border-primary/50 dark:border-primary/30 ml-4">
+                  {experienceTimelineEvents.map((event, index) => (
+                    <TimelineItem key={index} event={event} />
+                  ))}
+                </ol>
+              ) : (
+                <p className="text-muted-foreground text-center">Details about my professional experience will be updated soon.</p>
+              )}
+            </div>
+          </section>
 
-            {/* Skills Section */}
-            <section id="skills" className="animate-fadeIn md:col-span-1" style={{ animationDelay: '0.5s' }}>
-              <h2 className="text-3xl font-bold mb-8 font-headline flex items-center justify-center md:justify-start">
-                <Wrench className="mr-3 h-8 w-8 text-primary" />
-                Skills & Technologies
-              </h2>
-              <div className="p-8 rounded-xl glass-card">
-                {techStack.length > 0 ? (
-                  <div className="flex flex-wrap gap-4 justify-center">
-                    {techStack.map((tech) => (
-                      <Badge key={tech.name} variant="secondary" className="text-md py-2 px-4 glass-card !bg-primary/10 !border-primary/30 hover:!bg-primary/20 transition-all">
-                        <tech.icon className="mr-2 h-5 w-5 text-primary" />
-                        {tech.name}
-                      </Badge>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="text-muted-foreground text-center">Skills will be listed here soon.</p>
-                )}
-              </div>
-            </section>
-          </div>
+          {/* Skills Section */}
+          <section id="skills" className="animate-fadeIn" style={{ animationDelay: '0.5s' }}>
+            <h2 className="text-3xl font-bold mb-8 font-headline flex items-center justify-center md:justify-start">
+              <Wrench className="mr-3 h-8 w-8 text-primary" />
+              Skills & Technologies
+            </h2>
+            <div className="p-8 rounded-xl glass-card">
+              {techStack.length > 0 ? (
+                <div className="flex flex-wrap gap-4 justify-center">
+                  {techStack.map((tech) => (
+                    <Badge key={tech.name} variant="secondary" className="text-md py-2 px-4 glass-card !bg-primary/10 !border-primary/30 hover:!bg-primary/20 transition-all">
+                      <tech.icon className="mr-2 h-5 w-5 text-primary" />
+                      {tech.name}
+                    </Badge>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-muted-foreground text-center">Skills will be listed here soon.</p>
+              )}
+            </div>
+          </section>
 
           {/* Education Section */}
           <section id="education" className="animate-fadeIn" style={{ animationDelay: '0.7s' }}>
