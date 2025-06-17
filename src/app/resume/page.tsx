@@ -13,8 +13,6 @@ export const metadata: Metadata = {
 };
 
 export default function ResumePage() {
-  const resumeLink = "https://drive.google.com/file/d/1RJRsbu3zPmxrsovJENJEeYyQ-0LVJ1LZ/view?usp=drive_link";
-
   return (
     <div className="pt-12 pb-20 bg-gradient-to-br from-background via-background to-primary/5 dark:to-primary/20">
       <div className="container mx-auto px-4">
@@ -23,12 +21,6 @@ export default function ResumePage() {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             A detailed overview of my skills, experience, and education.
           </p>
-          <Button asChild size="lg" className="shadow-lg hover:shadow-primary/40 transition-shadow">
-            <Link href={resumeLink} target="_blank" rel="noopener noreferrer">
-              <DownloadCloud className="mr-2 h-5 w-5" />
-              Download Resume
-            </Link>
-          </Button>
         </div>
 
         <div className="mt-16">
