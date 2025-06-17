@@ -32,26 +32,27 @@ export default function ResumePage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-16 mt-16">
-          {/* Experience Section */}
-          <section id="experience" className="md:col-span-1 animate-fadeIn" style={{ animationDelay: '0.3s' }}>
-            <h2 className="text-3xl font-bold mb-8 font-headline flex items-center">
-              <Briefcase className="mr-3 h-8 w-8 text-primary" />
-              Experience
-            </h2>
-            <div className="p-0 md:p-8 rounded-xl md:glass-card">
-              {experienceTimelineEvents.length > 0 ? (
-                <ol className="relative border-l border-primary/50 dark:border-primary/30 ml-4">
-                  {experienceTimelineEvents.map((event, index) => (
-                    <TimelineItem key={index} event={event} />
-                  ))}
-                </ol>
-              ) : (
-                <p className="text-muted-foreground text-center">Details about my professional experience will be updated soon.</p>
-              )}
-            </div>
-          </section>
+          {/* Column 1: Experience & Skills */}
+          <div className="space-y-16">
+            {/* Experience Section */}
+            <section id="experience" className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
+              <h2 className="text-3xl font-bold mb-8 font-headline flex items-center">
+                <Briefcase className="mr-3 h-8 w-8 text-primary" />
+                Experience
+              </h2>
+              <div className="p-0 md:p-8 rounded-xl md:glass-card">
+                {experienceTimelineEvents.length > 0 ? (
+                  <ol className="relative border-l border-primary/50 dark:border-primary/30 ml-4">
+                    {experienceTimelineEvents.map((event, index) => (
+                      <TimelineItem key={index} event={event} />
+                    ))}
+                  </ol>
+                ) : (
+                  <p className="text-muted-foreground text-center">Details about my professional experience will be updated soon.</p>
+                )}
+              </div>
+            </section>
 
-          <div className="md:col-span-1 space-y-16">
             {/* Skills Section */}
             <section id="skills" className="animate-fadeIn" style={{ animationDelay: '0.5s' }}>
               <h2 className="text-3xl font-bold mb-8 font-headline flex items-center">
@@ -73,7 +74,10 @@ export default function ResumePage() {
                 )}
               </div>
             </section>
+          </div>
 
+          {/* Column 2: Education */}
+          <div>
             {/* Education Section */}
             <section id="education" className="animate-fadeIn" style={{ animationDelay: '0.7s' }}>
               <h2 className="text-3xl font-bold mb-8 font-headline flex items-center">
