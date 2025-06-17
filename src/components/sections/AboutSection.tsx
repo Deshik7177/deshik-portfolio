@@ -14,10 +14,10 @@ export function AboutSection() {
               Hey! I’m Paila Dhana Deshik — a Computer Science Engineer and tech explorer with a curious brain and robot-loving heart.
             </p>
             <p className="mb-2">
-              I work at the crossroads of software and hardware — from building Flask/Django-based web apps to designing smart systems with Raspberry Pi. I’m currently deep into backend dev, AI/ML, and automation, and I love taking real-world problems and turning them into projects that *do stuff*.
+              I work at the crossroads of software and hardware — from building Flask/Django-based web apps to designing smart systems with Raspberry Pi. I’m currently deep into backend dev, AI/ML, and automation, and I love taking real-world problems and turning them into projects that.
             </p>
             <p className="mb-6"> {/* mb-6 to give a bit more space before "My Tech Journey" */}
-              Outside the compiler, you’ll probably catch me messing around in the Robotics Lab, obsessing over new tech, or trying to build something I barely understand... *yet* 😎
+              Outside the compiler, you’ll probably catch me messing around in the Robotics Lab, obsessing over new tech, or trying to build something I barely understand...
             </p>
 
             <h3 className="text-2xl font-bold font-headline text-foreground mt-8 mb-4">My Tech Journey</h3>
@@ -25,7 +25,7 @@ export function AboutSection() {
               It all started back in 2018, when I was in 7th grade. My school introduced something called ATL — the Atal Tinkering Lab. That place changed everything.
             </p>
             <p className="mb-2">
-              For the first time, I touched circuits, sensors, and microcontrollers. We weren’t just studying science — we were *building it*. That’s when I realized: tech wasn’t just something you use... it was something you could *create*.
+              For the first time, I touched circuits, sensors, and microcontrollers. We weren’t just studying science — we were building it. That’s when I realized: tech wasn’t just something you use... it was something you could create.
             </p>
             <p className="mb-2">
               Then came 11th grade. Python entered the chat 📲<br/>
