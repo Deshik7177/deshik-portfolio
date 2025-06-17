@@ -31,9 +31,9 @@ export default function ResumePage() {
           </Button>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 mt-16">
-          {/* Column 1: Experience */}
-          <div className="space-y-16">
+        <div className="mt-16">
+          {/* Experience and Education in two columns */}
+          <div className="grid md:grid-cols-2 gap-16">
             <section id="experience" className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
               <h2 className="text-3xl font-bold mb-8 font-headline flex items-center">
                 <Briefcase className="mr-3 h-8 w-8 text-primary" />
@@ -51,32 +51,8 @@ export default function ResumePage() {
                 )}
               </div>
             </section>
-          </div>
-
-          {/* Column 2: Skills & Education */}
-          <div className="space-y-16">
-            <section id="skills" className="animate-fadeIn" style={{ animationDelay: '0.5s' }}>
-              <h2 className="text-3xl font-bold mb-8 font-headline flex items-center">
-                <Wrench className="mr-3 h-8 w-8 text-primary" />
-                Skills & Technologies
-              </h2>
-              <div className="p-8 rounded-xl glass-card">
-                {techStack.length > 0 ? (
-                  <div className="flex flex-wrap gap-4 justify-center">
-                    {techStack.map((tech) => (
-                      <Badge key={tech.name} variant="secondary" className="text-md py-2 px-4 glass-card !bg-primary/10 !border-primary/30 hover:!bg-primary/20 transition-all">
-                        <tech.icon className="mr-2 h-5 w-5 text-primary" />
-                        {tech.name}
-                      </Badge>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="text-muted-foreground text-center">Skills will be listed here soon.</p>
-                )}
-              </div>
-            </section>
             
-            <section id="education" className="animate-fadeIn" style={{ animationDelay: '0.7s' }}>
+            <section id="education" className="animate-fadeIn" style={{ animationDelay: '0.5s' }}>
               <h2 className="text-3xl font-bold mb-8 font-headline flex items-center">
                 <BookOpen className="mr-3 h-8 w-8 text-primary" />
                 Education
@@ -94,6 +70,28 @@ export default function ResumePage() {
               </div>
             </section>
           </div>
+
+          {/* Skills & Technologies section below, full width */}
+          <section id="skills" className="mt-16 animate-fadeIn" style={{ animationDelay: '0.7s' }}>
+            <h2 className="text-3xl font-bold mb-8 font-headline flex items-center justify-center md:justify-start">
+              <Wrench className="mr-3 h-8 w-8 text-primary" />
+              Skills & Technologies
+            </h2>
+            <div className="p-8 rounded-xl glass-card">
+              {techStack.length > 0 ? (
+                <div className="flex flex-wrap gap-4 justify-center">
+                  {techStack.map((tech) => (
+                    <Badge key={tech.name} variant="secondary" className="text-md py-2 px-4 glass-card !bg-primary/10 !border-primary/30 hover:!bg-primary/20 transition-all">
+                      <tech.icon className="mr-2 h-5 w-5 text-primary" />
+                      {tech.name}
+                    </Badge>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-muted-foreground text-center">Skills will be listed here soon.</p>
+              )}
+            </div>
+          </section>
         </div>
       </div>
     </div>
