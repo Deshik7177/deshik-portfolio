@@ -86,7 +86,7 @@ export const projects: Project[] = [
     title: 'College Chatbot with LLM + Flask',
     description: 'A smart chatbot fine-tuned on my college syllabus that can answer both syllabus-based and general queries. Built using Python, Flask, Ollama LLM, and a local JSON knowledge base. It combines local context + real-world responses. The app is live and accessible at: https://kiet-chatbot.netlify.app/',
     techStack: ['Python', 'Flask', 'Ollama', 'LLM', 'JSON', 'Netlify'],
-    imageUrl: '/projects/college-chatbot.png', // Updated image path
+    imageUrl: '/college-chatbot.png', // Updated path
     imageHint: 'chatbot interface ai',
     githubLink: 'https://github.com/Deshik7177/bot-backend',
     demoLink: 'https://kiet-chatbot.netlify.app/',
@@ -114,3 +114,4 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const contactEmail = "pdhanadeshik7177@gmail.com";
+
