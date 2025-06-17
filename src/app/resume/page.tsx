@@ -2,7 +2,8 @@
 import { educationTimelineEvents, experienceTimelineEvents, techStack } from '@/lib/data';
 import { TimelineItem } from '@/components/ui/TimelineItem';
 import { Badge } from '@/components/ui/badge';
-import { BookOpen, Briefcase, Wrench } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { BookOpen, Briefcase, Wrench, DownloadCloud } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
@@ -12,17 +13,25 @@ export const metadata: Metadata = {
 };
 
 export default function ResumePage() {
+  const resumeLink = "https://drive.google.com/file/d/1RJRsbu3zPmxrsovJENJEeYyQ-0LVJ1LZ/view?usp=drive_link";
+
   return (
     <div className="pt-12 pb-20 bg-gradient-to-br from-background via-background to-primary/5 dark:to-primary/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fadeIn" style={{ animationDelay: '0.1s' }}>
+        <div className="text-center mb-12 animate-fadeIn" style={{ animationDelay: '0.1s' }}>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-headline">My Professional Journey</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             A detailed overview of my skills, experience, and education.
           </p>
+          <Button asChild size="lg" className="shadow-lg hover:shadow-primary/40 transition-shadow">
+            <Link href={resumeLink} target="_blank" rel="noopener noreferrer">
+              <DownloadCloud className="mr-2 h-5 w-5" />
+              Download Resume
+            </Link>
+          </Button>
         </div>
 
-        <div className="space-y-16">
+        <div className="space-y-16 mt-16">
           {/* Grid for Experience and Skills */}
           <div className="grid md:grid-cols-2 gap-12">
             {/* Experience Section */}
