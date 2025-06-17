@@ -32,9 +32,8 @@ export default function ResumePage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-16 mt-16">
-          {/* Column 1: Experience & Skills */}
+          {/* Column 1: Experience */}
           <div className="space-y-16">
-            {/* Experience Section */}
             <section id="experience" className="animate-fadeIn" style={{ animationDelay: '0.3s' }}>
               <h2 className="text-3xl font-bold mb-8 font-headline flex items-center">
                 <Briefcase className="mr-3 h-8 w-8 text-primary" />
@@ -52,8 +51,10 @@ export default function ResumePage() {
                 )}
               </div>
             </section>
+          </div>
 
-            {/* Skills Section */}
+          {/* Column 2: Skills & Education */}
+          <div className="space-y-16">
             <section id="skills" className="animate-fadeIn" style={{ animationDelay: '0.5s' }}>
               <h2 className="text-3xl font-bold mb-8 font-headline flex items-center">
                 <Wrench className="mr-3 h-8 w-8 text-primary" />
@@ -74,11 +75,7 @@ export default function ResumePage() {
                 )}
               </div>
             </section>
-          </div>
-
-          {/* Column 2: Education */}
-          <div>
-            {/* Education Section */}
+            
             <section id="education" className="animate-fadeIn" style={{ animationDelay: '0.7s' }}>
               <h2 className="text-3xl font-bold mb-8 font-headline flex items-center">
                 <BookOpen className="mr-3 h-8 w-8 text-primary" />
