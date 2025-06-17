@@ -14,16 +14,15 @@ export const navItems: NavItem[] = [
 export const techStack = [
   { name: 'Python', icon: Code },
   { name: 'Django', icon: Layers },
+  {name: 'Flask', icon: Code},
   { name: 'React', icon: Code },
   { name: 'SQLite', icon: Database },
   { name: 'FastAPI', icon: Cpu },
   { name: 'JavaScript', icon: Code },
-  { name: 'TypeScript', icon: Code },
   { name: 'Node.js', icon: Layers },
   { name: 'Docker', icon: Layers },
   { name: 'Next.js', icon: Code },
   { name: 'Tailwind CSS', icon: Layers },
-  { name: 'ShadCN UI', icon: Layers },
 ];
 
 export const educationTimelineEvents: TimelineEvent[] = [
@@ -87,7 +86,7 @@ export const projects: Project[] = [
     title: 'College Chatbot with LLM + Flask',
     description: 'A smart chatbot fine-tuned on my college syllabus that can answer both syllabus-based and general queries. Built using Python, Flask, Ollama LLM, and a local JSON knowledge base. It combines local context + real-world responses. The app is live and accessible at: https://kiet-chatbot.netlify.app/',
     techStack: ['Python', 'Flask', 'Ollama', 'LLM', 'JSON', 'Netlify'],
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/projects/college-chatbot.png', // Updated image path
     imageHint: 'chatbot interface ai',
     githubLink: 'https://github.com/Deshik7177/bot-backend',
     demoLink: 'https://kiet-chatbot.netlify.app/',
@@ -115,4 +114,3 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const contactEmail = "pdhanadeshik7177@gmail.com";
-
