@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const headlines = ['Fullstack Developer', 'Techie', 'AI Enthusiast'];
+const headlines = ['Fullstack Developer','Backend Developer', 'Techie', 'AI Enthusiast'];
 
 export function AnimatedHeadline() {
   const [index, setIndex] = useState(0);

@@ -51,24 +51,32 @@ export const experienceTimelineEvents: TimelineEvent[] = [
     icon: Briefcase,
   },
 ];
-
-
 export const projects: Project[] = [
   {
     id: 'portfolio-v2',
     title: 'Personal Portfolio Website (This Site)',
     description: 'My dynamic personal portfolio built with Next.js and Tailwind CSS, showcasing my projects, skills, and journey. Features responsive design, interactive elements, and a dark mode.',
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Framer Motion'],
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/project/portfolio.png',
     imageHint: 'website homepage abstract',
     githubLink: 'https://github.com/Deshik7177/your-portfolio-repo-name',
+  },
+  {
+    id: 'college-chatbot-llm-flask',
+    title: 'College Chatbot with LLM + Flask',
+    description: 'A smart chatbot fine-tuned on my college syllabus that can answer both syllabus-based and general queries. Built using Python, Flask, Ollama LLM, and a local JSON knowledge base. It combines local context + real-world responses. The app is live and accessible at: https://kiet-chatbot.netlify.app/',
+    techStack: ['Python', 'Flask', 'Ollama', 'LLM', 'JSON', 'React', 'Netlify'],
+    imageUrl: '/project/chat-bot.png',
+    imageHint: 'chatbot interface ai',
+    githubLink: 'https://github.com/Deshik7177/bot-backend',
+    demoLink: 'https://kiet-chatbot.netlify.app/',
   },
   {
     id: 'flask-crud-api-mongodb-docker',
     title: 'Flask CRUD API with MongoDB & Docker',
     description: "Flask & MongoDB CRUD API, fully Dockerized. Offers RESTful endpoints, ID search, JSON support. Project details and testing guide on GitHub.",
     techStack: ["Python", "Flask", "MongoDB", "Docker", "REST API"],
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/project/backend.png',
     imageHint: 'api backend code',
     githubLink: 'https://github.com/Deshik7177/Corider_Flask_Application',
   },
@@ -77,20 +85,19 @@ export const projects: Project[] = [
     title: 'Credit Approval System Backend',
     description: "A scalable backend credit management system using Django and FastAPI. Features user profiles, loan eligibility checks, and PostgreSQL integration. Dockerized for deployment. See GitHub for full docs and API usage.",
     techStack: ["Python", "Django", "FastAPI", "PostgreSQL", "Docker"],
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/project/backend.png',
     imageHint: 'financial system architecture',
     githubLink: 'https://github.com/Deshik7177/Alemeno_Credit_Approval_System',
   },
   {
-    id: 'college-chatbot-llm-flask',
-    title: 'College Chatbot with LLM + Flask',
-    description: 'A smart chatbot fine-tuned on my college syllabus that can answer both syllabus-based and general queries. Built using Python, Flask, Ollama LLM, and a local JSON knowledge base. It combines local context + real-world responses. The app is live and accessible at: https://kiet-chatbot.netlify.app/',
-    techStack: ['Python', 'Flask', 'Ollama', 'LLM', 'JSON', 'Netlify'],
-    imageUrl: '/project/chat-bot.png', // Corrected path
-    imageHint: 'chatbot interface ai',
-    githubLink: 'https://github.com/Deshik7177/bot-backend',
-    demoLink: 'https://kiet-chatbot.netlify.app/',
-  },
+    id: 'path-planning-rover',
+    title: 'Path Planning Rover using Machine Learning (Decision Tree)',
+    description: 'Built an autonomous rover that intelligently navigates through unknown terrain using a Decision Tree-based Machine Learning model. The system continuously senses its environment, makes real-time path decisions, and controls movement — all without human intervention.',
+    techStack: ['Python', 'C++', 'Scikit-learn', 'Respberry pi', 'Linux'],
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'autonomous rover',
+    githubLink: 'https://github.com/Deshik7177/path-planning-rover',
+  }
 ];
 
 export const blogPosts: Blog[] = [];
