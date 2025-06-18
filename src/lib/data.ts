@@ -23,6 +23,7 @@ export const techStack = [
   { name: 'Docker', icon: Layers },
   { name: 'Next.js', icon: Code },
   { name: 'Tailwind CSS', icon: Layers },
+  { name: 'CSS', icon: Layers },
 ];
 
 export const educationTimelineEvents: TimelineEvent[] = [
