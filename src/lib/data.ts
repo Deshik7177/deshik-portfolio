@@ -59,7 +59,7 @@ export const projects: Project[] = [
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Framer Motion'],
     imageUrl: '/project/portfolio.png',
     imageHint: 'website homepage abstract',
-    githubLink: 'https://github.com/Deshik7177/your-portfolio-repo-name',
+    githubLink: 'https://github.com/Deshik7177/deshik-portfolio',
   },
   {
     id: 'college-chatbot-llm-flask',
