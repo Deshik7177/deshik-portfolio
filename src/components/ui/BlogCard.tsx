@@ -8,7 +8,7 @@ import { ArrowRight, CalendarDays } from 'lucide-react';
 
 export function BlogCard({ post }: { post: Blog }) {
   return (
-    <Card className="glass-card h-full flex flex-col overflow-hidden group hover:shadow-2xl hover:border-accent">
+    <Card className="glass-card h-full flex flex-col overflow-hidden group hover:shadow-2xl hover:border-accent hover:rotate-x-[3deg] hover:rotate-y-[3deg] hover:scale-[1.03]">
       {post.imageUrl && (
         <div className="aspect-video relative overflow-hidden">
           <Image

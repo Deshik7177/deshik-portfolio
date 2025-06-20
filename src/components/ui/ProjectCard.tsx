@@ -8,7 +8,7 @@ import { Github, ExternalLink } from 'lucide-react';
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="glass-card h-full flex flex-col overflow-hidden group hover:shadow-2xl hover:border-accent hover:rotate-x-[3deg] hover:rotate-y-[-3deg] hover:scale-[1.02]">
+    <Card className="glass-card h-full flex flex-col overflow-hidden group hover:shadow-2xl hover:border-accent hover:rotate-x-[5deg] hover:rotate-y-[-5deg] hover:scale-[1.03]">
       <CardHeader>
         <div className="aspect-[3/2] relative overflow-hidden rounded-md mb-4">
           <Image
