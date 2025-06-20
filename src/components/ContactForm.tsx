@@ -1,8 +1,10 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -25,6 +27,11 @@ const formSchema = z.object({
 
 type ContactFormValues = z.infer<typeof formSchema>;
 
+// Read EmailJS credentials from environment variables
+const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
 export function ContactForm() {
   const { toast } = useToast();
   const form = useForm<ContactFormValues>({
@@ -37,18 +44,44 @@ export function ContactForm() {
   });
 
   async function onSubmit(data: ContactFormValues) {
-    // Placeholder for actual submission logic (e.g., API call to Django backend)
-    console.log("Form data:", data);
+    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+      console.error("EmailJS environment variables are not set.");
+      toast({
+        title: "Configuration Error",
+        description: "EmailJS is not configured. Please set the necessary environment variables.",
+        variant: "destructive",
+      });
+      return;
+    }
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const templateParams = {
+      from_name: data.name,
+      from_email: data.email,
+      to_name: "Paila Dhana Deshik", // Or your name
+      message: data.message,
+    };
 
-    toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out, Paila will get back to you soon.",
-      variant: "default",
-    });
-    form.reset(); // Reset form fields
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
+      );
+      toast({
+        title: "Message Sent!",
+        description: "Thanks for reaching out, Paila will get back to you soon.",
+        variant: "default",
+      });
+      form.reset();
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      toast({
+        title: "Uh oh! Something went wrong.",
+        description: "There was a problem sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    }
   }
 
   return (
