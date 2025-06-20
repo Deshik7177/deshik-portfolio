@@ -70,7 +70,7 @@ export function ContactForm() {
       );
       toast({
         title: "Message Sent!",
-        description: "Thanks for reaching out, Paila will get back to you soon.",
+        description: "Thanks for reaching out, Deshik will get back to you soon. you can also connect through +91 7731061414",
         variant: "default",
       });
       form.reset();
