@@ -10,7 +10,7 @@ export function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-12 pb-20 bg-gradient-to-br from-background via-background to-primary/5 dark:to-primary/20">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 animate-fadeIn">
+        <div className="flex flex-col md:flex-row-reverse items-center justify-center gap-10 md:gap-20 animate-fadeIn">
           <div className="flex-shrink-0">
             <Image
               src="/pfp.png"
