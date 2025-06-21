@@ -27,7 +27,7 @@ const formSchema = z.object({
 
 type ContactFormValues = z.infer<typeof formSchema>;
 
-// Read EmailJS credentials from environment variables
+// Read EmailJS credentials from environment variables 
 const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
 const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
