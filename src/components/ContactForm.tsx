@@ -48,7 +48,7 @@ export function ContactForm() {
       console.error("EmailJS environment variables are not set.");
       toast({
         title: "Configuration Error",
-        description: "EmailJS is not configured. Please set the necessary environment variables.",
+        description: "The application is not configured to send emails. Please contact the administrator.",
         variant: "destructive",
       });
       return;

@@ -13,12 +13,11 @@ export function HeroSection() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 animate-fadeIn">
           <div className="flex-shrink-0">
             <Image
-              src="https://placehold.co/200x200.png"
+              src="/pfp.png"
               alt="Paila Dhana Deshik"
               width={200}
               height={200}
               className="rounded-full border-4 border-primary shadow-2xl animate-pulse-neon hover:scale-110 hover:-rotate-y-[8deg] transition-transform duration-700 ease-in-out"
-              data-ai-hint="profile person"
               priority
             />
           </div> 
