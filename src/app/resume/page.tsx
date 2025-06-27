@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function ResumePage() {
-  const resumeUrl = "https://drive.google.com/file/d/1RJRsbu3zPmxrsovJENJEeYyQ-0LVJ1LZ/view?usp=drive_link";
+  const resumeUrl = "https://drive.google.com/file/d/1s1lkSmld4ufZv_LIkHdXPI-tJfZOm9qu/view";
   return (
     <div className="pt-12 pb-20 bg-gradient-to-br from-background via-background to-primary/5 dark:to-primary/20">
       <div className="container mx-auto px-4">
